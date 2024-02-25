@@ -56,7 +56,7 @@ public class BookStoreTest
 
         String expectedOutput = "Dear, Hank Azaria," + System.lineSeparator() +
                                 "Thank you for ordering " + orderedBook + " from Turn-A-New-Leaf. Following are your details" + System.lineSeparator() +
-                                "Order ID: 004"+ System.lineSeparator() +
+                                "Order ID: " + orderID + System.lineSeparator() +
                                 "Order Date: " + LocalDate.now() + System.lineSeparator() +
                                 "User ID: " + store.getUserID() + System.lineSeparator() +
                                 "User contact: hankazaria@me.com" + System.lineSeparator() +
