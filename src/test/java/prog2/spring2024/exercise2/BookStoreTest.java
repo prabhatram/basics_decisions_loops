@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.time.LocalDate;
-import prog2.spring2024.exercise2.BookStore.BookDetails;
+import com.example.bookstore.basic.decisions.loops.internal.only.BookStore.BookDetails;
 import java.util.Random;
 
 public class BookStoreTest 
@@ -36,16 +36,16 @@ public class BookStoreTest
         store.setUserID();
         String id = "004";
         store.orderBook(2);
-        String orderedBook = null;
+        String orderedBook = "";
 
-        for (BookDetails book : BookDetails.values()) {
+        /* for (BookDetails book : BookDetails.values()) {
             if (id.equals(book.getBookID())) {
                 orderedBook = book.getBookName();
             } 
-        }
+        } */
 
-        String orderID = "TANLOD" + LocalDate.now() + "SLA";
-
+        String orderID = "TANLOD" + LocalDate.now() + "THE";
+        store.searchBook(id);
         store.orderConfirmation();
         
         for (BookDetails book : BookDetails.values()) {
