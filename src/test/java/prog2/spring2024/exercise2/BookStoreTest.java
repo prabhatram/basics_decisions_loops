@@ -10,7 +10,7 @@ import org.junit.Test;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.time.LocalDate;
-import com.example.bookstore.basic.decisions.loops.internal.only.BookStore.BookDetails;
+import prog2.spring2024.exercise2.BookStore.BookDetails;
 import java.util.Random;
 
 public class BookStoreTest 
